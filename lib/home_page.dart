@@ -1,7 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:camera_app/image_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:gal/gal.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -62,7 +61,6 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
           GestureDetector(
             onTap: () async {
               XFile picture = await cameraController!.takePicture();
-              Gal.putImage(picture.path);
               Navigator.push(
                   context,
                   MaterialPageRoute(

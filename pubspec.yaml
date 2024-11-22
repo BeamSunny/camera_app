@@ -37,7 +37,6 @@ dependencies:
   camera: ^0.10.6
   path: ^1.8.3 # Optional for saving captured images
   path_provider: ^2.0.14 # Optional
-  gal: ^2.3.0
 
 dev_dependencies:
   flutter_test:
